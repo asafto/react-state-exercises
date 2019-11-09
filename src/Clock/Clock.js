@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Clock.css';
 
 /**
  * Make a clock component that updates every second!
@@ -7,11 +8,38 @@ import React, { Component } from 'react';
  */
 
 class Clock extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			time: new Date().toLocaleTimeString()
+		};
+	}
+
+	componentDidMount() {
+		this.intervalID = setInterval(
+			() => this.tick(),
+			1000
+		);
+	}
+
+	componentWillUnmount() {
+		clearInterval(this.intervalID);
+	}
+
+	tick() {
+		this.setState({
+			time: new Date().toLocaleTimeString()
+		});
+	}
+
 	render() {
 		return (
 			<div>
 				<h1>Clock</h1>
-				The time is:
+				<div  className="clock">
+					It is: {this.state.time}
+				</div>
 			</div>
 		);
 	}

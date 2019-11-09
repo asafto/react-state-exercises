@@ -1,7 +1,47 @@
-.Car-color {
+/*.Car-color {*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    padding: 5px;*/
+/*    background: silver;*/
+/*    text-align: center;*/
+/*}*/
+
+.silver {
     width: 80px;
     height: 80px;
     padding: 5px;
-    background: silver;
     text-align: center;
+    background: silver
+}
+
+.red {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    background: red
+}
+
+.blue {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    background: blue
+}
+
+.yellow {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    background: yellow
+}
+
+.green {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    background: green
 }
